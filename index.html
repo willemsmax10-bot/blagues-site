@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Blagues du jour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style simple et propre -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .joke-box {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            min-height: 80px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .ad-zone {
+            border: 2px dashed #ccc;
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            color: #777;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: #666;
+            margin: 20px 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blagues du jour</h1>
+        <p>Un petit rire à chaque clic.</p>
+    </header>
+
+    <main>
+        <!-- Zone de pub en haut -->
+        <div class="ad-zone">
+            Zone de publicité (haut de page)<br>
+            <small>Plus tard : ici tu pourras mettre le code de Google AdSense ou autre plateforme.</small>
+        </div>
+
+        <section class="joke-section">
+            <h2>Ta blague</h2>
+            <div id="joke" class="joke-box">
+                Clique sur le bouton pour afficher une blague !
+            </div>
+            <button onclick="nouvelleBlague()">Nouvelle blague</button>
+        </section>
+
+        <!-- Zone de pub au milieu -->
+        <div class="ad-zone">
+            Zone de publicité (milieu de page)<br>
+            <small>Emplacement réservé à une bannière ou un bloc d’annonces.</small>
+        </div>
+
+        <section>
+            <h2>À propos du site</h2>
+            <p>
+                Ce site affiche des blagues aléatoires grâce à un petit script JavaScript simple.
+                Tu pourras rajouter tes propres blagues, organiser par catégories, ou même connecter
+                une API plus tard si tu le souhaites.
+            </p>
+        </section>
+
+        <!-- Zone de pub en bas -->
+        <div class="ad-zone">
+            Zone de publicité (bas de page)<br>
+            <small>Idéal pour un autre bloc pub.</small>
+        </div>
+    </main>
+
+    <footer>
+        Site de blagues — créé avec amour et JavaScript.
+    </footer>
+
+    <!-- Script JavaScript : blagues -->
+    <script>
+        // Tableau de blagues (tu peux les modifier, en ajouter, etc.)
+        const blagues = [
+            "Pourquoi les canards sont toujours à l’heure ? Parce qu’ils sont dans l’étang.",
+            "Que dit une mère à son enfant geek ? Va jouer dehors, il fait un beau screen.",
+            "Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ? Parce que sinon ils tombent dans le bateau.",
+            "Que fait une fraise sur un cheval ? Tagada tagada.",
+            "Quel est le comble pour un électricien ? De ne pas être au courant.",
+            "Pourquoi les maths dépriment ? Parce qu’elles ont trop de problèmes.",
+            "Quel est le sport le plus fruité ? La boxe, parce que tu te prends des pêches.",
+            "Pourquoi les vampires aiment-ils le courrier ? Parce qu’ils adorent les enveloppes-sang.",
+            "Que dit une imprimante dans l’eau ? J’ai papier.",
+            "Pourquoi les programmeurs préfèrent la nuit ? Parce que le jour, il y a trop de bugs."
+        ];
+
+        // Fonction qui choisit une blague aléatoire
+        function nouvelleBlague() {
+            const index = Math.floor(Math.random() * blagues.length);
+            const zoneBlague = document.getElementById("joke");
+            zoneBlague.textContent = blagues[index];
+        }
+
+        // Optionnel : afficher une blague automatiquement au chargement de la page
+        window.addEventListener("load", nouvelleBlague);
+    </script>
+</body>
+</html>
