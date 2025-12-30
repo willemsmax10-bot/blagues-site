@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
     <title>Blagues du jour</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -48,6 +47,17 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
+        .ad-zone {
+            background: #ffe6e6;
+            border: 2px dashed #ff4f5e;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: center;
+            border-radius: 10px;
+            color: #ff4f5e;
+            font-weight: bold;
+        }
+
         button {
             background: #ff4f5e;
             border: none;
@@ -70,6 +80,7 @@
             font-size: 18px;
             font-weight: bold;
             color: #444;
+            white-space: pre-line;
         }
 
         footer {
@@ -89,6 +100,8 @@
 
 <div class="container">
 
+    <div class="ad-zone">Espace pub (à remplir plus tard)</div>
+
     <h2 class="section-title">Choisis un thème</h2>
 
     <!-- Enfants -->
@@ -98,12 +111,23 @@
         <p class="joke" id="joke-enfants"></p>
     </div>
 
+    <div class="ad-zone">Espace pub (à remplir plus tard)</div>
+
     <!-- Adultes -->
     <div class="generator">
         <h3>Blagues pour adultes</h3>
         <button onclick="generateJoke('adultes')">Générer</button>
         <p class="joke" id="joke-adultes"></p>
     </div>
+
+    <!-- Alcool -->
+    <div class="generator">
+        <h3>Blagues sur l’alcool</h3>
+        <button onclick="generateJoke('alcool')">Générer</button>
+        <p class="joke" id="joke-alcool"></p>
+    </div>
+
+    <div class="ad-zone">Espace pub (à remplir plus tard)</div>
 
     <!-- Toto -->
     <div class="generator">
@@ -119,6 +143,8 @@
         <p class="joke" id="joke-ralonge"></p>
     </div>
 
+    <div class="ad-zone">Espace pub (à remplir plus tard)</div>
+
     <!-- Absurdes -->
     <div class="generator">
         <h3>Blagues absurdes</h3>
@@ -133,111 +159,120 @@
         <p class="joke" id="joke-simple"></p>
     </div>
 
-    <!-- À propos -->
     <h2 class="section-title">À propos de moi</h2>
 
     <div class="generator">
         <p>
             Salut ! Moi c’est <strong>Max</strong>.  
             J’adore l’humour, la créativité et apprendre de nouvelles choses.  
-            Ce site est un petit projet personnel pour partager des blagues, faire sourire les gens et m’améliorer en développement web.
+            Ce site est un projet personnel pour partager des blagues et faire sourire les gens.
         </p>
 
         <p>
-            🎯 <strong>Pourquoi ce site ?</strong><br>
-            Pour offrir un endroit simple, fun et coloré où tu peux générer une blague en un clic.
-        </p>
-
-        <p>
-            📬 <strong>Contact :</strong><br>
-            (Tu peux ajouter ton email ou un lien si tu veux)
+            🎯 <strong>Objectif :</strong><br>
+            Offrir un endroit simple, fun et coloré où tu peux générer une blague en un clic.
         </p>
     </div>
 
 </div>
 
 <footer>
-    © 2025 - Site créé par Max — Tous droits réservés
+    © 2025 - Site créé par Max — Tous droits réservés<br>
+    Icône favicon créée par John Sorrentino — Source : favicon.io
 </footer>
 
 <script>
     const jokes = {
+
         enfants: [
-            "Pourquoi les plongeurs plongent-ils toujours en arrière ? Parce que sinon ils tombent dans le bateau.",
-            "Quel est le comble pour un jardinier ? De raconter des salades.",
-            "Pourquoi les maths dépriment-elles ? Parce qu’elles ont trop de problèmes.",
-            "Pourquoi les poules n’aiment-elles pas l’hiver ? Parce qu’elles ont froid aux œufs.",
-            "Quel est le sport préféré des insectes ? Le criquet.",
-            "Pourquoi les fantômes aiment-ils l’ascenseur ? Parce que ça les soulève.",
-            "Pourquoi les poissons détestent l’ordinateur ? À cause du net.",
-            "Que dit une maman tomate à son bébé ? Ketchup.",
-            "Pourquoi les squelettes ne se battent-ils jamais ? Ils n’ont pas les tripes.",
-            "Quel est le comble pour un électricien ? De ne pas être au courant."
+            "Pourquoi les plongeurs plongent-ils toujours en arrière ?\n\nParce que sinon ils tombent dans le bateau.",
+            "Pourquoi les poules n’aiment-elles pas l’hiver ?\n\nParce qu’elles ont froid aux œufs.",
+            "Quel est le sport préféré des insectes ?\n\nLe criquet.",
+            "Pourquoi les maths dépriment-elles ?\n\nParce qu’elles ont trop de problèmes.",
+            "Pourquoi les poissons n’aiment-ils pas l’ordinateur ?\n\nÀ cause du net.",
+            "Que dit une maman tomate à son bébé ?\n\nKetchup.",
+            "Pourquoi les fantômes aiment-ils l’ascenseur ?\n\nParce que ça les soulève.",
+            "Pourquoi les squelettes ne se battent-ils jamais ?\n\nIls n’ont pas les tripes.",
+            "Pourquoi les girafes n’aiment-elles pas les pizzas ?\n\nParce qu’elles n’ont pas de mains.",
+            "Pourquoi les arbres ne parlent-ils pas ?\n\nParce qu’ils ont la langue de bois."
         ],
 
         adultes: [
-            "Je ne bois jamais d’alcool… sauf quand j’en bois.",
-            "J’ai essayé d’être normal une fois. C’était la pire minute de ma vie.",
-            "Je ne suis pas paresseux, je suis en mode économie d’énergie.",
-            "J’ai un corps de rêve… dommage que ce ne soit pas le mien.",
-            "Je ne suis pas têtu, j’ai juste raison.",
-            "Je ne suis pas gros, je suis juste plus facile à voir.",
-            "Je ne suis pas en retard, je suis en édition limitée.",
-            "Je ne dors pas au travail, je recharge mes idées.",
-            "Je ne suis pas vieux, je suis vintage.",
-            "Je ne suis pas bizarre, je suis une édition spéciale."
+            "Je ne suis pas paresseux…\n\nJe suis en mode économie d’énergie.",
+            "J’ai essayé d’être normal une fois…\n\nC’était la pire minute de ma vie.",
+            "Je ne suis pas têtu…\n\nJ’ai juste raison.",
+            "Je ne suis pas gros…\n\nJe suis plus facile à voir.",
+            "Je ne dors pas au travail…\n\nJe recharge mes idées.",
+            "Je ne suis pas vieux…\n\nJe suis vintage.",
+            "Je ne suis pas bizarre…\n\nJe suis une édition spéciale.",
+            "Je ne suis pas en retard…\n\nJe suis en édition limitée.",
+            "Je ne suis pas fatigué…\n\nJe suis en mode veille.",
+            "Je ne suis pas perdu…\n\nJe fais un détour stratégique."
+        ],
+
+        alcool: [
+            "Pourquoi le vin ne se perd jamais ?\n\nParce qu’il a toujours une bonne bouteille.",
+            "Pourquoi la bière est-elle toujours joyeuse ?\n\nParce qu’elle a du houblon dans la vie.",
+            "Pourquoi le whisky est-il philosophe ?\n\nParce qu’il se pose toujours des questions profondes.",
+            "Pourquoi le rhum ne ment jamais ?\n\nParce qu’il est franc.",
+            "Pourquoi le champagne est-il snob ?\n\nParce qu’il pétille de supériorité.",
+            "Pourquoi le pastis est-il mystérieux ?\n\nParce qu’il cache toujours quelque chose.",
+            "Pourquoi le vin rouge est-il romantique ?\n\nParce qu’il voit la vie en rouge.",
+            "Pourquoi la vodka est-elle froide ?\n\nParce qu’elle a un cœur de glace.",
+            "Pourquoi la bière ne court-elle jamais ?\n\nParce qu’elle a peur de se faire mousser.",
+            "Pourquoi le mojito est-il cool ?\n\nParce qu’il a la menthe fraîche."
         ],
 
         toto: [
-            "Toto dit à sa maîtresse : 'Madame, j’ai oublié mon cahier !' — 'Encore ?!' — 'Oui, mais cette fois je m’en souviens.'",
-            "Toto demande : 'Papa, c’est quoi un homme ?' — 'C’est quelqu’un de fort et courageux.' — Toto : 'Alors je veux être une femme.'",
-            "La maîtresse : 'Toto, cite-moi un mammifère.' — Toto : 'Le chat.' — 'Très bien, un autre ?' — 'Un autre chat.'",
-            "Toto dit : 'J’ai eu 0 en dictée.' — Sa mère : 'Pourquoi ?' — 'Parce que j’ai tout juste.'",
-            "La maîtresse : 'Toto, pourquoi es-tu en retard ?' — 'Parce que j’ai pas voulu venir.'",
-            "Toto : 'Papa, tu peux me donner 5€ ?' — 'Encore ?!' — 'Oui, mais cette fois c’est pour toi.'",
-            "La maîtresse : 'Toto, fais une phrase avec “papa”.' — Toto : 'Papa, donne-moi 10€.'",
-            "Toto : 'Maman, j’ai faim !' — 'Bonjour faim, moi c’est maman.'",
-            "La maîtresse : 'Toto, tu dors ?' — Toto : 'Non, je ferme les yeux pour ne pas voir votre tête.'",
-            "Toto : 'J’ai eu 20/20 !' — 'Bravo !' — 'Oui, mais c’était sur 100.'"
+            "La maîtresse : 'Toto, cite-moi un mammifère.'\n\nToto : 'Le chat.'\n\n'Un autre ?'\n\n'Un autre chat.'",
+            "Toto dit : 'J’ai eu 0 en dictée.'\n\nSa mère : 'Pourquoi ?'\n\n'Parce que j’ai tout juste.'",
+            "Toto : 'Papa, tu peux me donner 5€ ?'\n\n'Encore ?!'\n\n'Oui, mais cette fois c’est pour toi.'",
+            "La maîtresse : 'Toto, tu dors ?'\n\nToto : 'Non, je ferme les yeux pour ne pas voir votre tête.'",
+            "Toto : 'J’ai eu 20/20 !'\n\n'Bravo !'\n\n'Oui, mais c’était sur 100.'",
+            "Toto : 'Maman, j’ai faim !'\n\n'Bonjour faim, moi c’est maman.'",
+            "Toto : 'Papa, c’est quoi un homme ?'\n\n'Quelqu’un de fort.'\n\n'Alors je veux être une femme.'",
+            "La maîtresse : 'Pourquoi es-tu en retard ?'\n\nToto : 'Parce que j’ai pas voulu venir.'",
+            "Toto : 'J’ai oublié mon cahier.'\n\n'Encore ?!'\n\n'Oui, mais cette fois je m’en souviens.'",
+            "La maîtresse : 'Fais une phrase avec “papa”.'\n\nToto : 'Papa, donne-moi 10€.'"
         ],
 
         ralonge: [
-            "C’est l’histoire d’un homme qui marche, marche, marche… et au bout d’un moment il se dit qu’il aurait dû prendre le bus.",
-            "C’est l’histoire d’un escargot qui croise une limace. Il lui dit : 'Tu as oublié ta maison !'",
-            "C’est l’histoire d’un type qui raconte une histoire tellement longue… qu’il s’endort avant la fin.",
-            "C’est l’histoire d’un chien qui court après sa queue pendant des heures… et quand il l’attrape, il sait plus pourquoi.",
-            "C’est l’histoire d’un monsieur qui met trois heures à raconter une blague… et elle n’est même pas drôle.",
-            "C’est l’histoire d’un poisson qui nage, nage, nage… puis il se rend compte qu’il est dans un aquarium.",
-            "C’est l’histoire d’un mec qui cherche ses lunettes pendant 20 minutes… elles étaient sur sa tête.",
-            "C’est l’histoire d’un arbre qui pousse tellement lentement… qu’il en a marre.",
-            "C’est l’histoire d’un livre tellement long… que même l’auteur ne l’a pas fini.",
-            "C’est l’histoire d’un gars qui commence une histoire… et qui oublie la fin."
+            "C’est l’histoire d’un homme qui marche, marche, marche…\n\nEt au bout d’un moment, il se dit qu’il aurait dû prendre le bus.",
+            "C’est l’histoire d’un escargot qui croise une limace…\n\nIl lui dit : 'Tu as oublié ta maison !'",
+            "C’est l’histoire d’un type qui raconte une histoire tellement longue…\n\nQu’il s’endort avant la fin.",
+            "C’est l’histoire d’un chien qui court après sa queue pendant des heures…\n\nEt quand il l’attrape, il sait plus pourquoi.",
+            "C’est l’histoire d’un poisson qui nage, nage, nage…\n\nPuis il se rend compte qu’il est dans un aquarium.",
+            "C’est l’histoire d’un mec qui cherche ses lunettes pendant 20 minutes…\n\nElles étaient sur sa tête.",
+            "C’est l’histoire d’un arbre qui pousse tellement lentement…\n\nQu’il en a marre.",
+            "C’est l’histoire d’un livre tellement long…\n\nQue même l’auteur ne l’a pas fini.",
+            "C’est l’histoire d’un gars qui commence une histoire…\n\nEt qui oublie la fin.",
+            "C’est l’histoire d’un monsieur qui met trois heures à raconter une blague…\n\nEt elle n’est même pas drôle."
         ],
 
         absurde: [
-            "Pourquoi les poissons n’aiment-ils pas les ordinateurs ? Parce qu’ils ont peur des nets.",
-            "Pourquoi les girafes n’aiment-elles pas les pizzas ? Parce qu’elles n’ont pas de mains.",
-            "Pourquoi les éléphants ne bronzent-ils jamais ? Parce qu’ils ont peur des coups de soleil.",
-            "Pourquoi les arbres ne parlent-ils pas ? Parce qu’ils ont la langue de bois.",
-            "Pourquoi les nuages ne vont-ils jamais à l’école ? Parce qu’ils sèchent.",
-            "Pourquoi les pierres ne dansent-elles pas ? Parce qu’elles ont le rythme dans la roche.",
-            "Pourquoi les moutons ne jouent-ils pas au foot ? Parce qu’ils ont peur du carton rouge.",
-            "Pourquoi les avions ne mangent-ils pas ? Parce qu’ils sont déjà pleins.",
-            "Pourquoi les carottes sont-elles orange ? Parce que si elles étaient bleues, ce serait bizarre.",
-            "Pourquoi les portes ne rient-elles jamais ? Parce qu’elles sont fermées."
+            "Pourquoi les poissons n’aiment-ils pas les ordinateurs ?\n\nParce qu’ils ont peur des nets.",
+            "Pourquoi les girafes n’aiment-elles pas les pizzas ?\n\nParce qu’elles n’ont pas de mains.",
+            "Pourquoi les éléphants ne bronzent-ils jamais ?\n\nParce qu’ils ont peur des coups de soleil.",
+            "Pourquoi les nuages ne vont-ils jamais à l’école ?\n\nParce qu’ils sèchent.",
+            "Pourquoi les pierres ne dansent-elles pas ?\n\nParce qu’elles ont le rythme dans la roche.",
+            "Pourquoi les moutons ne jouent-ils pas au foot ?\n\nParce qu’ils ont peur du carton rouge.",
+            "Pourquoi les avions ne mangent-ils pas ?\n\nParce qu’ils sont déjà pleins.",
+            "Pourquoi les carottes sont-elles orange ?\n\nParce que si elles étaient bleues, ce serait bizarre.",
+            "Pourquoi les portes ne rient-elles jamais ?\n\nParce qu’elles sont fermées.",
+            "Pourquoi les arbres ne courent-ils pas ?\n\nParce qu’ils prennent racine."
         ],
 
         simple: [
-            "C’est l’histoire d’un pingouin qui respire par les fesses… un jour il s’assoit et il meurt.",
-            "Pourquoi les plongeurs plongent-ils toujours en arrière ? Parce que sinon ils tombent dans le bateau.",
-            "Pourquoi les maths dépriment-elles ? Parce qu’elles ont trop de problèmes.",
-            "Pourquoi les squelettes ne se battent-ils jamais ? Ils n’ont pas les tripes.",
-            "Pourquoi les poules n’aiment-elles pas l’hiver ? Parce qu’elles ont froid aux œufs.",
-            "Pourquoi les fantômes aiment-ils l’ascenseur ? Parce que ça les soulève.",
-            "Pourquoi les poissons détestent l’ordinateur ? À cause du net.",
-            "Que dit une maman tomate à son bébé ? Ketchup.",
-            "Quel est le comble pour un électricien ? De ne pas être au courant.",
-            "Pourquoi les vaches ferment-elles les yeux ? Pour faire du lait concentré."
+            "C’est l’histoire d’un pingouin qui respire par les fesses…\n\nUn jour il s’assoit… et il meurt.",
+            "Pourquoi les plongeurs plongent-ils toujours en arrière ?\n\nParce que sinon ils tombent dans le bateau.",
+            "Pourquoi les maths dépriment-elles ?\n\nParce qu’elles ont trop de problèmes.",
+            "Pourquoi les squelettes ne se battent-ils jamais ?\n\nIls n’ont pas les tripes.",
+            "Pourquoi les poules n’aiment-elles pas l’hiver ?\n\nParce qu’elles ont froid aux œufs.",
+            "Pourquoi les fantômes aiment-ils l’ascenseur ?\n\nParce que ça les soulève.",
+            "Pourquoi les poissons détestent l’ordinateur ?\n\nÀ cause du net.",
+            "Que dit une maman tomate à son bébé ?\n\nKetchup.",
+            "Quel est le comble pour un électricien ?\n\nDe ne pas être au courant.",
+            "Pourquoi les vaches ferment-elles les yeux ?\n\nPour faire du lait concentré."
         ]
     };
 
