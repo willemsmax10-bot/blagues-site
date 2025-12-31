@@ -119,29 +119,35 @@
     <h2 class="section-title">Choisis un thème</h2>
 
     <!-- Enfants -->
-    <div class="generator">
-        <h3>Blagues pour enfants</h3>
-        <button onclick="generateJoke('enfants')">Générer</button>
-        <p class="joke" id="joke-enfants"></p>
-        <div class="share-buttons">
-    <button onclick="shareJoke('enfants')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
-    <button onclick="shareJoke('enfants')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
-    <button onclick="shareJoke('enfants')" class="share facebook"><i class="fab fa-facebook"></i></button>
-    <button onclick="copyJoke('enfants')" class="share copy"><i class="fas fa-copy"></i></button>
-</div>
+   <div class="generator">
+    <h3>Blagues pour enfants</h3>
+    <button onclick="generateJoke('enfants')">Générer</button>
+    <p class="joke" id="joke-enfants"></p>
+
+    <div class="share-buttons">
+        <button onclick="shareJoke('enfants')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+        <button onclick="shareJoke('enfants')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+        <button onclick="shareJoke('enfants')" class="share facebook"><i class="fab fa-facebook"></i></button>
+        <button onclick="copyJoke('enfants')" class="share copy"><i class="fas fa-copy"></i></button>
+        <button onclick="shareSnap('enfants')" class="share snapchat"><i class="fab fa-snapchat"></i></button>
+        <button onclick="shareInsta('enfants')" class="share instagram"><i class="fab fa-instagram"></i></button>
     </div>
+</div>
 
     <div class="generator">
-    <h3>Humour provocant</h3>
+    <h3>Blagues provoc</h3>
     <button onclick="generateJoke('provoc')">Générer</button>
     <p class="joke" id="joke-provoc"></p>
-       <div class="share-buttons">
-    <button onclick="shareJoke('provoc')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
-    <button onclick="shareJoke('provoc')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
-    <button onclick="shareJoke('provoc')" class="share facebook"><i class="fab fa-facebook"></i></button>
-    <button onclick="copyJoke('provoc')" class="share copy"><i class="fas fa-copy"></i></button>
-</div>
+
+    <div class="share-buttons">
+        <button onclick="shareJoke('provoc')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+        <button onclick="shareJoke('provoc')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+        <button onclick="shareJoke('provoc')" class="share facebook"><i class="fab fa-facebook"></i></button>
+        <button onclick="copyJoke('provoc')" class="share copy"><i class="fas fa-copy"></i></button>
+        <button onclick="shareSnap('provoc')" class="share snapchat"><i class="fab fa-snapchat"></i></button>
+        <button onclick="shareInsta('provoc')" class="share instagram"><i class="fab fa-instagram"></i></button>
     </div>
+</div>
     
     <div class="ad-zone">
         <script>
@@ -158,87 +164,105 @@
 
     <!-- Adultes -->
     <div class="generator">
-        <h3>Blagues pour adultes</h3>
-        <button onclick="generateJoke('adultes')">Générer</button>
-        <p class="joke" id="joke-adultes"></p>
-        <div class="share-buttons">
-    <button onclick="shareJoke('adultes')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
-    <button onclick="shareJoke('adultes')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
-    <button onclick="shareJoke('adultes')" class="share facebook"><i class="fab fa-facebook"></i></button>
-    <button onclick="copyJoke('adultes')" class="share copy"><i class="fas fa-copy"></i></button>
-</div>
+    <h3>Blagues pour adultes</h3>
+    <button onclick="generateJoke('adultes')">Générer</button>
+    <p class="joke" id="joke-adultes"></p>
+
+    <div class="share-buttons">
+        <button onclick="shareJoke('adultes')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+        <button onclick="shareJoke('adultes')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+        <button onclick="shareJoke('adultes')" class="share facebook"><i class="fab fa-facebook"></i></button>
+        <button onclick="copyJoke('adultes')" class="share copy"><i class="fas fa-copy"></i></button>
+        <button onclick="shareSnap('adultes')" class="share snapchat"><i class="fab fa-snapchat"></i></button>
+        <button onclick="shareInsta('adultes')" class="share instagram"><i class="fab fa-instagram"></i></button>
     </div>
+</div>
 
     <!-- Alcool -->
     <div class="generator">
-        <h3>Blagues sur l’alcool</h3>
-        <button onclick="generateJoke('alcool')">Générer</button>
-        <p class="joke" id="joke-alcool"></p>
-        <div class="share-buttons">
-    <button onclick="shareJoke('alcool')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
-    <button onclick="shareJoke('alcool')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
-    <button onclick="shareJoke('alcool')" class="share facebook"><i class="fab fa-facebook"></i></button>
-    <button onclick="copyJoke('alcool')" class="share copy"><i class="fas fa-copy"></i></button>
-</div>
+    <h3>Blagues sur l’alcool</h3>
+    <button onclick="generateJoke('alcool')">Générer</button>
+    <p class="joke" id="joke-alcool"></p>
+
+    <div class="share-buttons">
+        <button onclick="shareJoke('alcool')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+        <button onclick="shareJoke('alcool')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+        <button onclick="shareJoke('alcool')" class="share facebook"><i class="fab fa-facebook"></i></button>
+        <button onclick="copyJoke('alcool')" class="share copy"><i class="fas fa-copy"></i></button>
+        <button onclick="shareSnap('alcool')" class="share snapchat"><i class="fab fa-snapchat"></i></button>
+        <button onclick="shareInsta('alcool')" class="share instagram"><i class="fab fa-instagram"></i></button>
     </div>
+</div>
 
     <div class="ad-zone">Partage ce site de générateur a tes potes!</div>
 
     <!-- Toto -->
     <div class="generator">
-        <h3>Blagues de Toto</h3>
-        <button onclick="generateJoke('toto')">Générer</button>
-        <p class="joke" id="joke-toto"></p>
-        <div class="share-buttons">
-    <button onclick="shareJoke('toto')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
-    <button onclick="shareJoke('toto')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
-    <button onclick="shareJoke('toto')" class="share facebook"><i class="fab fa-facebook"></i></button>
-    <button onclick="copyJoke('toto')" class="share copy"><i class="fas fa-copy"></i></button>
-</div>
+    <h3>Blagues de Toto</h3>
+    <button onclick="generateJoke('toto')">Générer</button>
+    <p class="joke" id="joke-toto"></p>
+
+    <div class="share-buttons">
+        <button onclick="shareJoke('toto')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+        <button onclick="shareJoke('toto')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+        <button onclick="shareJoke('toto')" class="share facebook"><i class="fab fa-facebook"></i></button>
+        <button onclick="copyJoke('toto')" class="share copy"><i class="fas fa-copy"></i></button>
+        <button onclick="shareSnap('toto')" class="share snapchat"><i class="fab fa-snapchat"></i></button>
+        <button onclick="shareInsta('toto')" class="share instagram"><i class="fab fa-instagram"></i></button>
     </div>
+</div>
 
     <!-- À rallonge -->
     <div class="generator">
-        <h3>Blagues à rallonge</h3>
-        <button onclick="generateJoke('ralonge')">Générer</button>
-        <p class="joke" id="joke-ralonge"></p>
-        <div class="share-buttons">
-    <button onclick="shareJoke('ralonge')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
-    <button onclick="shareJoke('ralonge')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
-    <button onclick="shareJoke('ralonge')" class="share facebook"><i class="fab fa-facebook"></i></button>
-    <button onclick="copyJoke('ralonge')" class="share copy"><i class="fas fa-copy"></i></button>
-</div>
+    <h3>Blagues à rallonge</h3>
+    <button onclick="generateJoke('ralonge')">Générer</button>
+    <p class="joke" id="joke-ralonge"></p>
+
+    <div class="share-buttons">
+        <button onclick="shareJoke('ralonge')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+        <button onclick="shareJoke('ralonge')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+        <button onclick="shareJoke('ralonge')" class="share facebook"><i class="fab fa-facebook"></i></button>
+        <button onclick="copyJoke('ralonge')" class="share copy"><i class="fas fa-copy"></i></button>
+        <button onclick="shareSnap('ralonge')" class="share snapchat"><i class="fab fa-snapchat"></i></button>
+        <button onclick="shareInsta('ralonge')" class="share instagram"><i class="fab fa-instagram"></i></button>
     </div>
+</div>
 
     <div class="ad-zone">
         <script src="https://pl28370796.effectivegatecpm.com/74/4a/a1/744aa1aed5702677d50ca4ce03995989.js"></script>
     </div>
 
     <!-- Absurdes -->
-    <div class="generator">
-        <h3>Blagues absurdes</h3>
-        <button onclick="generateJoke('absurde')">Générer</button>
-        <p class="joke" id="joke-absurde"></p>
-        <div class="share-buttons">
-    <button onclick="shareJoke('absurde')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
-    <button onclick="shareJoke('absurde')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
-    <button onclick="shareJoke('absurde')" class="share facebook"><i class="fab fa-facebook"></i></button>
-    <button onclick="copyJoke('absurde')" class="share copy"><i class="fas fa-copy"></i></button>
-</div>
+   <div class="generator">
+    <h3>Blagues absurdes</h3>
+    <button onclick="generateJoke('absurde')">Générer</button>
+    <p class="joke" id="joke-absurde"></p>
+
+    <div class="share-buttons">
+        <button onclick="shareJoke('absurde')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+        <button onclick="shareJoke('absurde')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+        <button onclick="shareJoke('absurde')" class="share facebook"><i class="fab fa-facebook"></i></button>
+        <button onclick="copyJoke('absurde')" class="share copy"><i class="fas fa-copy"></i></button>
+        <button onclick="shareSnap('absurde')" class="share snapchat"><i class="fab fa-snapchat"></i></button>
+        <button onclick="shareInsta('absurde')" class="share instagram"><i class="fab fa-instagram"></i></button>
     </div>
+</div>
 
     <!-- Simples -->
     <div class="generator">
-        <h3>Simples & efficaces</h3>
-        <button onclick="generateJoke('simple')">Générer</button>
-        <p class="joke" id="joke-simple"></p>
-        <div class="share-buttons">
-    <button onclick="shareJoke('simple')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
-    <button onclick="shareJoke('simple')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
-    <button onclick="shareJoke('simple')" class="share facebook"><i class="fab fa-facebook"></i></button>
-    <button onclick="copyJoke('simple')" class="share copy"><i class="fas fa-copy"></i></button>
-</div>
+    <h3>Simples & efficaces</h3>
+    <button onclick="generateJoke('simple')">Générer</button>
+    <p class="joke" id="joke-simple"></p>
+
+    <div class="share-buttons">
+        <button onclick="shareJoke('simple')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+        <button onclick="shareJoke('simple')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+        <button onclick="shareJoke('simple')" class="share facebook"><i class="fab fa-facebook"></i></button>
+        <button onclick="copyJoke('simple')" class="share copy"><i class="fas fa-copy"></i></button>
+        <button onclick="shareSnap('simple')" class="share snapchat"><i class="fab fa-snapchat"></i></button>
+        <button onclick="shareInsta('simple')" class="share instagram"><i class="fab fa-instagram"></i></button>
     </div>
+</div>
 
     <h2 class="section-title">À propos de moi</h2>
 
@@ -449,5 +473,28 @@ function copyJoke(theme) {
         .catch(() => alert("Impossible de copier la blague."));
 }
 </script>    
+<script>
+function shareSnap(theme) {
+    const joke = document.getElementById("joke-" + theme).textContent.trim();
+    if (!joke) return alert("Génère une blague avant de partager.");
+
+    navigator.clipboard.writeText(joke)
+        .then(() => {
+            alert("Blague copiée ! Ouvre Snapchat et colle-la dans ton snap.");
+            window.open("snapchat://", "_blank");
+        });
+}
+
+function shareInsta(theme) {
+    const joke = document.getElementById("joke-" + theme).textContent.trim();
+    if (!joke) return alert("Génère une blague avant de partager.");
+
+    navigator.clipboard.writeText(joke)
+        .then(() => {
+            alert("Blague copiée ! Ouvre Instagram et colle-la dans ta story ou ton message.");
+            window.open("instagram://app", "_blank");
+        });
+}
+</script>
 </body>
 </html>
