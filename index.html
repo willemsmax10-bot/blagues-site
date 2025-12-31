@@ -351,6 +351,47 @@
         document.getElementById("joke-" + theme).textContent = random;
     }
 </script>
+<script>
+    function shareJoke(theme) {
+        const jokeElement = document.getElementById("joke-" + theme);
+        const joke = jokeElement ? jokeElement.textContent.trim() : "";
 
+        if (!joke) {
+            alert("Aucune blague à partager pour cette catégorie.");
+            return;
+        }
+
+        const encodedJoke = encodeURIComponent(joke + "\n\nDécouvre plus de blagues ici : " + window.location.href);
+
+        // Menu simple pour choisir la plateforme
+        const choice = prompt(
+            "Choisis une plateforme :\n1 = WhatsApp\n2 = X (Twitter)\n3 = Facebook\n4 = Copier la blague"
+        );
+
+        switch (choice) {
+            case "1":
+                window.open("https://api.whatsapp.com/send?text=" + encodedJoke, "_blank");
+                break;
+
+            case "2":
+                window.open("https://twitter.com/intent/tweet?text=" + encodedJoke, "_blank");
+                break;
+
+            case "3":
+                window.open("https://www.facebook.com/sharer/sharer.php?u=" + window.location.href + "&quote=" + encodedJoke, "_blank");
+                break;
+
+            case "4":
+                navigator.clipboard.writeText(joke)
+                    .then(() => alert("Blague copiée !"))
+                    .catch(() => alert("Impossible de copier la blague."));
+                break;
+
+            default:
+                alert("Choix invalide.");
+        }
+    }
+</script>
+    
 </body>
 </html>
