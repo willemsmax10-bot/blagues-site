@@ -6,6 +6,7 @@
     <title>Générateur de blagues en un click - humour, humour noir, toto, provocant</title>
     <meta name="description" content="Générateur de blagues instantané : humour noir, blagues de Toto, humour provocant, blagues absurdes et plus. Cliquez pour une blague aléatoire !">
     <meta name="keywords" content="blagues, humour, humour noir, blagues Toto, générateur de blagues, blagues drôles, humour provocant, humour absurde">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <style>
         body {
@@ -123,7 +124,10 @@
         <button onclick="generateJoke('enfants')">Générer</button>
         <p class="joke" id="joke-enfants"></p>
         <div class="share-buttons">
-    <button onclick="shareJoke('enfants')">Partager</button>
+    <button onclick="shareJoke('enfants')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+    <button onclick="shareJoke('enfants')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+    <button onclick="shareJoke('enfants')" class="share facebook"><i class="fab fa-facebook"></i></button>
+    <button onclick="copyJoke('enfants')" class="share copy"><i class="fas fa-copy"></i></button>
 </div>
     </div>
 
@@ -131,8 +135,11 @@
     <h3>Humour provocant</h3>
     <button onclick="generateJoke('provoc')">Générer</button>
     <p class="joke" id="joke-provoc"></p>
-        <div class="share-buttons">
-    <button onclick="shareJoke('provoc')">Partager</button>
+       <div class="share-buttons">
+    <button onclick="shareJoke('provoc')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+    <button onclick="shareJoke('provoc')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+    <button onclick="shareJoke('provoc')" class="share facebook"><i class="fab fa-facebook"></i></button>
+    <button onclick="copyJoke('provoc')" class="share copy"><i class="fas fa-copy"></i></button>
 </div>
     </div>
     
@@ -155,7 +162,10 @@
         <button onclick="generateJoke('adultes')">Générer</button>
         <p class="joke" id="joke-adultes"></p>
         <div class="share-buttons">
-    <button onclick="shareJoke('adultes')">Partager</button>
+    <button onclick="shareJoke('adultes')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+    <button onclick="shareJoke('adultes')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+    <button onclick="shareJoke('adultes')" class="share facebook"><i class="fab fa-facebook"></i></button>
+    <button onclick="copyJoke('adultes')" class="share copy"><i class="fas fa-copy"></i></button>
 </div>
     </div>
 
@@ -165,7 +175,10 @@
         <button onclick="generateJoke('alcool')">Générer</button>
         <p class="joke" id="joke-alcool"></p>
         <div class="share-buttons">
-    <button onclick="shareJoke('alcool')">Partager</button>
+    <button onclick="shareJoke('alcool')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+    <button onclick="shareJoke('alcool')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+    <button onclick="shareJoke('alcool')" class="share facebook"><i class="fab fa-facebook"></i></button>
+    <button onclick="copyJoke('alcool')" class="share copy"><i class="fas fa-copy"></i></button>
 </div>
     </div>
 
@@ -177,7 +190,10 @@
         <button onclick="generateJoke('toto')">Générer</button>
         <p class="joke" id="joke-toto"></p>
         <div class="share-buttons">
-    <button onclick="shareJoke('toto')">Partager</button>
+    <button onclick="shareJoke('toto')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+    <button onclick="shareJoke('toto')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+    <button onclick="shareJoke('toto')" class="share facebook"><i class="fab fa-facebook"></i></button>
+    <button onclick="copyJoke('toto')" class="share copy"><i class="fas fa-copy"></i></button>
 </div>
     </div>
 
@@ -187,7 +203,10 @@
         <button onclick="generateJoke('ralonge')">Générer</button>
         <p class="joke" id="joke-ralonge"></p>
         <div class="share-buttons">
-    <button onclick="shareJoke('ralonge')">Partager</button>
+    <button onclick="shareJoke('ralonge')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+    <button onclick="shareJoke('ralonge')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+    <button onclick="shareJoke('ralonge')" class="share facebook"><i class="fab fa-facebook"></i></button>
+    <button onclick="copyJoke('ralonge')" class="share copy"><i class="fas fa-copy"></i></button>
 </div>
     </div>
 
@@ -201,7 +220,10 @@
         <button onclick="generateJoke('absurde')">Générer</button>
         <p class="joke" id="joke-absurde"></p>
         <div class="share-buttons">
-    <button onclick="shareJoke('absurde')">Partager</button>
+    <button onclick="shareJoke('absurde')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+    <button onclick="shareJoke('absurde')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+    <button onclick="shareJoke('absurde')" class="share facebook"><i class="fab fa-facebook"></i></button>
+    <button onclick="copyJoke('absurde')" class="share copy"><i class="fas fa-copy"></i></button>
 </div>
     </div>
 
@@ -211,7 +233,10 @@
         <button onclick="generateJoke('simple')">Générer</button>
         <p class="joke" id="joke-simple"></p>
         <div class="share-buttons">
-    <button onclick="shareJoke('simple')">Partager</button>
+    <button onclick="shareJoke('simple')" class="share whatsapp"><i class="fab fa-whatsapp"></i></button>
+    <button onclick="shareJoke('simple')" class="share twitter"><i class="fab fa-x-twitter"></i></button>
+    <button onclick="shareJoke('simple')" class="share facebook"><i class="fab fa-facebook"></i></button>
+    <button onclick="copyJoke('simple')" class="share copy"><i class="fas fa-copy"></i></button>
 </div>
     </div>
 
