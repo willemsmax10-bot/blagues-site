@@ -417,6 +417,37 @@
         }
     }
 </script>
-    
+<script>
+function shareJoke(theme) {
+    const joke = document.getElementById("joke-" + theme).textContent.trim();
+    if (!joke) return alert("Génère une blague avant de partager.");
+
+    const encoded = encodeURIComponent(joke + "\n\nDécouvre plus de blagues ici : " + window.location.href);
+
+    // WhatsApp
+    if (event.target.closest(".whatsapp")) {
+        window.open("https://api.whatsapp.com/send?text=" + encoded, "_blank");
+    }
+
+    // Twitter / X
+    if (event.target.closest(".twitter")) {
+        window.open("https://twitter.com/intent/tweet?text=" + encoded, "_blank");
+    }
+
+    // Facebook
+    if (event.target.closest(".facebook")) {
+        window.open("https://www.facebook.com/sharer/sharer.php?u=" + window.location.href + "&quote=" + encoded, "_blank");
+    }
+}
+
+function copyJoke(theme) {
+    const joke = document.getElementById("joke-" + theme).textContent.trim();
+    if (!joke) return alert("Génère une blague avant de copier.");
+
+    navigator.clipboard.writeText(joke)
+        .then(() => alert("Blague copiée !"))
+        .catch(() => alert("Impossible de copier la blague."));
+}
+</script>    
 </body>
 </html>
